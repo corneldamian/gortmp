@@ -4,8 +4,8 @@ package gortmp
 
 import (
 	"errors"
-	"github.com/zhangpeihao/goamf"
-	"github.com/zhangpeihao/log"
+	"github.com/corneldamian/goamf"
+	"github.com/corneldamian/log"
 )
 
 type OutboundStreamHandler interface {

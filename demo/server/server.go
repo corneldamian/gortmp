@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/zhangpeihao/goflv"
-	rtmp "github.com/zhangpeihao/gortmp"
-	"github.com/zhangpeihao/log"
+	"github.com/corneldamian/goflv"
+	rtmp "github.com/corneldamian/gortmp"
+	"github.com/corneldamian/log"
 	"os"
 	"os/signal"
 	"syscall"

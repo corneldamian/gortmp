@@ -3,7 +3,7 @@
 package gortmp
 
 import (
-	"github.com/zhangpeihao/log"
+	"github.com/corneldamian/log"
 )
 
 // Chunk stream

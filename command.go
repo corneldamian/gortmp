@@ -3,8 +3,8 @@
 package gortmp
 
 import (
-	"github.com/zhangpeihao/goamf"
-	"github.com/zhangpeihao/log"
+	"github.com/corneldamian/goamf"
+	"github.com/corneldamian/log"
 )
 
 // Command
@@ -31,10 +31,14 @@ func (cmd *Command) Write(w Writer) (err error) {
 	if err != nil {
 		return
 	}
-	_, err = amf.WriteDouble(w, float64(cmd.TransactionID))
-	if err != nil {
-		return
+
+	if cmd.TransactionID != ^uint32(0) {
+		_, err = amf.WriteDouble(w, float64(cmd.TransactionID))
+		if err != nil {
+			return
+		}
 	}
+
 	for _, object := range cmd.Objects {
 		_, err = amf.WriteValue(w, object)
 		if err != nil {

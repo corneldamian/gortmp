@@ -5,8 +5,8 @@ package gortmp
 import (
 	"bytes"
 	"fmt"
-	"github.com/zhangpeihao/goamf"
-	"github.com/zhangpeihao/log"
+	"github.com/corneldamian/goamf"
+	"github.com/corneldamian/log"
 )
 
 type InboundStreamHandler interface {
